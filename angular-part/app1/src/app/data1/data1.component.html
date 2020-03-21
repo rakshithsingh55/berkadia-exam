@@ -1,0 +1,15 @@
+<div>
+    <div *ngFor = "let contact of contacts">
+            {{contact.first_name}}<br/>
+
+            {{contact.last_name}}<br/>
+
+            {{contact.address}}<br/>
+
+            {{contact.city}}<br/>
+
+            {{contact.state}}<br/>
+
+            <input type="button" (click)="deleteContact(contact)" name="delete">
+    </div>
+</div>
